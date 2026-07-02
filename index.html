@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reaction Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HOME -->
+    <div id="homeScreen" class="screen">
+        <h1>Reaction Trainer</h1>
+
+        <button onclick="startSequence()">Start</button>
+        <button onclick="openSettings()">Settings</button>
+
+        <p>React only when the screen turns green.</p>
+    </div>
+
+    <!-- SETTINGS -->
+    <div id="settingsScreen" class="screen hidden">
+        <div class="topBar">
+            <h2>Settings</h2>
+            <button class="closeBtn" onclick="closeSettings()">✕</button>
+        </div>
+
+        <label>Volume</label>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1">
+
+        <label>READY → SET (ms)</label>
+        <input type="number" id="delay1">
+
+        <label>SET → GO delay (ms)</label>
+        <input type="number" id="delay2">
+
+        <label>GO loop speed (ms)</label>
+        <input type="number" id="delay3">
+
+        <button onclick="saveSettings()">Save</button>
+    </div>
+
+    <!-- GO -->
+    <div id="goScreen" class="screen hidden">
+        <h1>GO!</h1>
+    </div>
+
+    <!-- RESULT -->
+    <div id="resultScreen" class="screen hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

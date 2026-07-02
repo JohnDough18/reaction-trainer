@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+/* ===================== */
+/* SCREEN SYSTEM */
+/* ===================== */
+.screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* IMPORTANT for settings header alignment */
+}
+
+.hidden {
+    display: none;
+}
+
+/* ===================== */
+/* HOME + GENERAL BUTTONS */
+/* ===================== */
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ===================== */
+/* SETTINGS TOP BAR (FIXED ALIGNMENT) */
+/* ===================== */
+.topBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* X BUTTON */
+.closeBtn {
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* ===================== */
+/* INPUTS */
+/* ===================== */
+input {
+    margin: 6px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* ===================== */
+/* GO SCREEN FIX */
+/* ===================== */
+#goScreen {
+    background: green;
+}
+
+/* ===================== */
+/* RESULT SCREEN TEXT */
+/* ===================== */
+#resultScreen h1 {
+    font-size: 50px;
+}
